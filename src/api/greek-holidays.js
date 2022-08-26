@@ -32,8 +32,8 @@ const version = "2022-08"
 import Cors from "cors"
 const cors = Cors()
 
-import moment from "moment-timezone"
-const moment = monent();  // date manipulation library
+import Moment from "moment-timezone"
+const moment = Monent();  // date manipulation library
 // moment.tz(..., String)     create a moment with a time zone
 // moment().tz(String)        convert the time zone of an existing moment
 // DD/MM/YYYY  D/M/Y          format date with/without zero-padding
