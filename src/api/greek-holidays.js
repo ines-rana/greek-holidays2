@@ -114,11 +114,8 @@ END:VEVENT
 const vcal_footer = '\nEND:VCALENDAR\r';
 
 
-console.log("grTZ:", grTZ);
   var now = moment().tz(grTZ);
-console.log("typeof now:", typeof now);
   const thisYear = Number(now.format('YYYY'));
-console.log("thisYear:", thisYear);
 
   var asList = 0;
 	if (req.query && req.query.asList) asList = Number(req.query.asList);
