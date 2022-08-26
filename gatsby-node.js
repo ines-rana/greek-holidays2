@@ -11,11 +11,5 @@ exports.createPages = async ({ graphql, actions }) => {
     redirectInBrowser: true,
  })
 
-  createRedirect({
-    fromPath: '/calendar',
-    toPath: '/api/greek-holidays/',
-    isPermanent: true,
-    redirectInBrowser: true,
- })
 
 }
