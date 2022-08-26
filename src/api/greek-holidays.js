@@ -32,6 +32,13 @@ const version = "2022-08"
 import Cors from "cors"
 const cors = Cors()
 
+import moment from "moment-timezone"
+const moment = monent();  // date manipulation library
+// moment.tz(..., String)     create a moment with a time zone
+// moment().tz(String)        convert the time zone of an existing moment
+// DD/MM/YYYY  D/M/Y          format date with/without zero-padding
+// HH:mm:ss                   format time with zero-padding
+
 export default async function corsHandler(req, res) {
 
   // Run CORS middleware and handle errors
@@ -48,11 +55,6 @@ export default async function corsHandler(req, res) {
 
   res.setHeader('X-Version', version);
 
-const moment = require('moment-timezone'); // date manipulation library
-// moment.tz(..., String)     create a moment with a time zone
-// moment().tz(String)        convert the time zone of an existing moment
-// DD/MM/YYYY  D/M/Y          format date with/without zero-padding
-// HH:mm:ss                   format time with zero-padding
 
 const grTZ = 'Europe/Athens'; // timezone in Greece
 
