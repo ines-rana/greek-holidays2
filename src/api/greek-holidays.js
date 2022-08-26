@@ -28,6 +28,7 @@
 
 
 const version = "2022-08"
+const grTZ = 'Europe/Athens'; // timezone in Greece
 
 import Cors from "cors"
 const cors = Cors()
@@ -55,7 +56,6 @@ export default async function corsHandler(req, res) {
   res.setHeader('X-Version', version);
 
 
-const grTZ = 'Europe/Athens'; // timezone in Greece
 
 
 const uuidv1 = require('uuid/v1'); // uuidv1();
