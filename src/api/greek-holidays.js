@@ -109,7 +109,7 @@ UID:uid
 DTSTAMP:dtstamp
 END:VEVENT`
 
-const vcal_footer = '\nEND:VCALENDAR\r';
+const vcal_footer = 'END:VCALENDAR\r';
 
 
   var now = moment().tz(grTZ);
@@ -200,7 +200,7 @@ const vcal_footer = '\nEND:VCALENDAR\r';
       :  '' +
            vcal_header +
            hList.map(date2event).join().replace(/,/g, "\n") +
-           vcal_footer + '\n'
+           vcal_footer 
 	  )
   );
 
