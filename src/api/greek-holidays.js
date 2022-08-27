@@ -72,8 +72,7 @@ X-WR-CALDESC;LANGUAGE=el:Επίσημες αργίες στην Ελλάδα
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
 X-PUBLISHED-TTL:PT24H
 CALSCALE:GREGORIAN
-METHOD:PUBLISH
-`
+METHOD:PUBLISH`
 
 
 // no need for VTIMEZONE definition
@@ -108,8 +107,7 @@ DTEND:dtend
 COMMENT;LANGUAGE=el:comment
 UID:uid
 DTSTAMP:dtstamp
-END:VEVENT
-`
+END:VEVENT`
 
 const vcal_footer = '\nEND:VCALENDAR\r';
 
