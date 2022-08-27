@@ -194,14 +194,13 @@ const vcal_footer = 'END:VCALENDAR\r';
 
 
   res.send(
-	  (
+	(
       (asList == 1)
-      ?  hList.map(date2list).join().replace(/,/g, "\n") + '\n'
-      :  '' +
-           vcal_header +
-           hList.map(date2event).join().replace(/,/g, "\n") +
-           vcal_footer 
-	  )
+      ? hList.map(date2list).join().replace(/,/g, "\n") + '\n'
+      : vcal_header +
+          hList.map(date2event).join().replace(/,/g, "\n") +
+          vcal_footer 
+	)
   );
 
 
