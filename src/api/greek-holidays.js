@@ -200,7 +200,7 @@ const vcal_footer = 'END:VCALENDAR\r';
       : (vcal_header +
           hList.map(date2event).join("") +
           vcal_footer 
-        ).replace(/[\r\n]+/g,"\r\n")
+        ).replace(/[\r\n]+/g,"\r\n")	// each line must end with "\r\n"
 	)
   );
 
