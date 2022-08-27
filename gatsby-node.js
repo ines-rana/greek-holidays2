@@ -6,7 +6,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   createRedirect({
     fromPath: '/',
-    toPath: '/api/greek-holidays/',
+    toPath: '/api/greek-holidays',
     isPermanent: true,
     redirectInBrowser: true,
  })
