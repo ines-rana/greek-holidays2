@@ -188,7 +188,7 @@ const vcal_footer = 'END:VCALENDAR\r';
       o["month"] = dobj.m - 1; //month: 0-11
       o["date"] = dobj.d;
       var d1 = moment.tz(o, grTZ).format("YYYY-MM-DD")
-      return (d1 + '\t' + dobj.t + '\r')
+      return (d1 + '\t' + dobj.t)
   }
 
 
@@ -196,12 +196,11 @@ const vcal_footer = 'END:VCALENDAR\r';
   res.send(
 	(
       (asList == 1)
-//    ? hList.map(date2list).join().replace(/,/g, "\n") + '\n'
       ? hList.map(date2list).join("\n")
       : (vcal_header +
           hList.map(date2event).join("") +
           vcal_footer 
-        ).replace(/[\r\n]+/g,"\r\n")	// each line must end with "\r\n"
+        ).replace(/[\r\n]+/g,"\r\n")	// each ical line must end with "\r\n"
 	)
   );
 
