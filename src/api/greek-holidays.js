@@ -19,11 +19,9 @@
 //
 //	https://greekholidays.gtsb.io?asList=1[&...]
 
-// Create a north sign (in SVG format)
-
 // query parameters
-//  years=2017-2021   :  desired range of years
-//  asList=1          :  format output as a plain text list
+//     years=2017-2021   :  desired range of years
+//     asList=1          :  format output as a plain text list
 
 
 
